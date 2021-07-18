@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<body style="background-color: darkslategrey;">
+    <link href="/home/kk/Desktop/Moringa-Projects/Birthday/Birthday.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="113">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+     crossorigin="anonymous">
+     <script defer src="Birthday.js"></script>
+    <title>Document</title>
+</head>
+<section>
+     <div class="Tittle">
+         <h2>Welcome To Birthday Genie</h2>
+     </div>
+     <div class="d-flex flex-row aligh-items-center">
+        <div class="p-2 text-light">
+            <h3 class="Intro">Hey! the following site is a genie who
+                will be able to predict the Week you were born.Hope you Enjoy.</h3>
+               
+               
+
+        </div>
+
+
+    </div>
+    <div class="container">
+    <h4>Please Enter the following... </h4>    
+     <form id="form" onsubmit="Blankcheck()">
+    <!-- Date Configuration-->
+    <div class="date-setting">
+        <label class="text-light" id="labeldate">Enter Date You Were born</label>
+        <input type="number" Name="day" id="date1" placeholder="Use arrow key" min="1" max="31">
+    </div>
+    <!-- Month Configuration-->
+    <div class="month-setting pt-3">
+        <label class="text-light">Enter Month You Were born </label>
+        <input type="number" Name="month" placeholder="Use arrow key" id="month" min="1" max="12">
+    </div>
+    <!-- Year Born Configuration-->
+    <div class="year-born pt-3">
+        <label class="text-light">Enter the Year You were born</label>
+        <input type="number" name="year" placeholder="Use arow key"id="yearborn" min="1950" max="2021"></div>
+    </div>
+    <!-- Male/Female Configuraton-->
+    <div class="container">
+    <input type="checkbox" name="Male or female" id="Male">
+    <label for="Male"> Male</label>
+    <input type="checkbox" name="Male or female" id="Male">
+    <label for="Male"> Female</label>
+
+    </div>
+
+    <!--Submit Button-->
+    <div class="container pt-3">
+    <input  type="submit"  value="Submit to confirm Birth Details">
+</div>
+    <!-- Results Button-->
+    <div class="container pt-3">
+    <input id ="btn" type="button" value="Click here to see Results" onclick="Results()"/>
+</div>
+
+</form>
+<img class="loi" src="file:///home/kk/Downloads/The_Genie_Aladdin.png" alt="#"
+            width="200"
+            height="200">
+</div>
+    <nav class="navbar navbar-expand-lg bg-info pt-5"></nav>
+
+</section>
+
+</body>
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+crossorigin="anonymous">
+</script>
+</html>
